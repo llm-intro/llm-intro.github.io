@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Introduzione al Machine Learning e ai Large Language Models</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -14,17 +14,182 @@
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
 	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+	
+<div class="reveal">
+  <div class="slides">
+    <section>
+		<section>
+			<h3>Breve storia dell'AI</h3>
+			<p>Artificial intelligence is based on the assumption that the process of human thought can be mechanized.</p>
+		</section>
 
+		<section>
+			<h3>Mechanical reasoning</h3>
+			<p>The study of mechanical—or "formal"—reasoning has a long history. Chinese, Indian and Greek philosophers all developed structured methods of formal deduction by the first millennium BCE. Their ideas were developed over the centuries by philosophers such as Aristotle (who gave a formal analysis of the syllogism), Euclid (whose Elements was a model of formal reasoning), al-Khwārizmī (who developed algebra and gave his name to "algorithm")</p>
+		</section>
+				
+		<section>
+			<h3>1200: Lullo</h3>
+			<p>Spanish philosopher Ramon Llull (1232–1315) developed several logical machines devoted to the production of knowledge by logical means;[33] Llull described his machines as mechanical entities that could combine basic and undeniable truths by simple logical operations, produced by the machine by mechanical meanings, in such ways as to produce all the possible knowledge.</p>
+		</section>
+
+		<section>
+			<h3>1600: Leibniz</h3>
+			<p>Leibniz envisioned a universal language of reasoning, the characteristica universalis, which would reduce argumentation to calculation so that "there would be no more need of disputation between two philosophers than between two accountants. For it would suffice to take their pencils in hand, down to their slates, and to say each other (with a friend as witness, if they liked): Let us calculate."</p>
+		</section>
+				
+		<section>
+			<h3>1854: Boole</h3>
+			<p>An Investigation of the Laws of Thought on Which are Founded the Mathematical Theories of Logic and Probabilities by George Boole</p>
+		</section>
+
+		<section>
+			<h3>1936: Turing</h3>
+			<p>The Church-Turing thesis implied that a mechanical device, shuffling symbols as simple as 0 and 1, could imitate any conceivable process of mathematical deduction. The key insight was the Turing machine—a simple theoretical construct that captured the essence of abstract symbol manipulation</p>
+		</section>
+				
+		<section>
+			<h3>1943: Artificial neuron</h3>
+			<p>Warren McCulloch and Walter Pitts develop a mathematical model that imitates the functioning of a biological neuron, the artificial neuron which is considered to be the first neural model invented.</p>
+		</section>
+		
+		<section>
+			<h3>1950: Turing Test</h3>
+			<p>Alan Turing published a landmark paper "Computing Machinery and Intelligence", in which he speculated about the possibility of creating machines that think and the paper introduced his concept of what is now known as the Turing test to the general public.</p>
+			<p>It opens with the words: "I propose to consider the question, 'Can machines think?'"</p>
+		</section>
+
+		<section>
+			<h3>1951: SNARC</h3>
+			<p>Marvin Minsky and Dean Edmonds build the first neural network machine, able to learn, the SNARC.</p>
+		</section>
+
+		<section>
+			<h3>1957: Perceptron</h3>
+			<p>Frank Rosenblatt designed the first neural network for computers - the perceptron - which simulated the thought processes of the human brain.</p>
+		</section>
+
+		<section>
+			<h3>1964: ELIZA</h3>
+			<p>Il primo chatbot: ELIZA viene sviluppata al MIT da Joseph Weizenbaum</p>
+			<p>Created to explore communication between humans and machines, ELIZA simulated conversation by using a pattern matching and substitution methodology that gave users an illusion of understanding on the part of the program, but had no representation that could be considered really understanding what was being said by either party.</p>
+		</section>
+
+		<section>
+			<h3>1974-1980</h3>
+			<p>First AI Winter</p>
+		</section>
+
+		<section>
+			<h3>1980: Expert Systems</h3>
+			<p>Rise of expert systems: An expert system is a program that answers questions or solves problems about a specific domain of knowledge, using logical rules that are derived from the knowledge of experts</p>
+		</section>
+
+		<section>
+			<h3>1980: knowledge database</h3>
+			<p>Cyc is the first attempt to attack the commonsense knowledge problem directly, by creating a massive database that would contain all the mundane facts that the average person knows.</p>
+		</section>
+
+		<section>
+			<h3>1982: neural networks</h3>
+			<p>physicist John Hopfield was able to prove that a form of neural network (now called a "Hopfield net") could learn and process information, and provably converges after enough time under any fixed condition.</p>
+			<p>Geoffrey Hinton and David Rumelhart popularized a method for training neural networks called "backpropagation"</p>
+		</section>
+
+		<section>
+			<h3>1987–1993</h3>
+			<p>Second AI Winter</p>
+		</section>
+
+		<section>
+			<h3>1997: Deep Blue</h3>
+			<p>On 11 May 1997, Deep Blue became the first computer chess-playing system to beat a reigning world chess champion, Garry Kasparov.</p>
+			<p>The super computer was a specialized version of a framework produced by IBM, and was capable of processing 200,000,000 moves per second.</p>
+		</section>
+
+		<section>
+			<h3>1998: MNIST</h3>
+			<p>Release of the MNIST database, a dataset comprising a mix of handwritten digits from American Census Bureau employees and American high school students. The MNIST database has since become a benchmark for evaluating handwriting recognition.</p>
+		</section>
+
+		<section>
+			<h3>2009: ImageNet</h3>
+			<p>Release of the ImageNET database. ImageNet is a large visual database envisioned by Fei-Fei Li from Stanford University, who realized that the best machine learning algorithms wouldn't work well if the data didn't reflect the real world. For many, ImageNet was the catalyst for the AI boom of the 21st century.</p>
+		</section>
+
+		<section>
+			<h3>2010: Deep learning</h3>
+			<p>Deep learning becomes feasible, which leads to machine learning becoming integral to many widely used software services and applications. Deep learning spurs huge advances in vision and text processing.</p>
+		</section>
+
+		<section>
+			<h3>2011: Watson</h3>
+			<p>Using a combination of machine learning, natural language processing and information retrieval techniques, IBM's Watson beats two human champions in a Jeopardy! competition.</p>
+		</section>
+
+		<section>
+			<h3>2012: Cats</h3>
+			<p>The Google Brain team, led by Andrew Ng and Jeff Dean, create a neural network that learns to recognize cats by watching unlabeled images taken from frames of YouTube videos.</p>
+		</section>
+
+		<section>
+			<h3>2013: Word Embeddings</h3>
+			<p>A widely cited paper nicknamed word2vec revolutionizes the processing of text in machine learnings. It shows how each word can be converted into a sequence of numbers (word embeddings), the use of these vectors revolutionized text processing in machine learning.</p>
+		</section>
+
+		<section>
+			<h3>2014: DeepDream</h3>
+			<p>DeepDream is a computer vision program created by Google engineer Alexander Mordvintsev that uses a convolutional neural network to find and enhance patterns in images via algorithmic pareidolia, thus creating a dream-like appearance reminiscent of a psychedelic experience in the deliberately overprocessed images.</p>
+		</section>
+
+		<section>
+			<h3>2016: AlphaGo</h3>
+			<p>Google's AlphaGo program becomes the first Computer Go program to beat an unhandicapped professional human player using a combination of machine learning and tree search techniques. Later improved as AlphaGo Zero and then in 2017 generalized to Chess and more two-player games with AlphaZero.</p>
+		</section>
+
+		<section>
+			<h3>2017: Attention is all you need.</h3>
+			<p>A team at Google Brain invent the transformer architecture,[53] which allows for faster parallel training of neural networks on sequential data like text.</p>
+		</section>
+
+		<section>
+			<h3>2020: The rise of the LLM</h3>
+			<p>Generative AI leads to revolutionary models, creating a proliferation of foundation models both proprietary and open source, notably enabling products such as ChatGPT (text-based) and Stable Diffusion (image based). Machine learning and AI enter the wider public consciousness. The commercial potential of AI based on machine learning causes large increases in valuations of companies linked to AI.</p>
+		</section>
+		
+    </section>
+
+    <section><h3>Generative AI</h3></section>
+	
+    <section>
+      <section><h3>GPT Architecture</h3></section>
+      <section><h3>semi-supervised training</h3></section>
+      <section><h3>GPT series https://en.wikipedia.org/wiki/Generative_pre-trained_transformer#Foundational_models</h3></section>
+      <section><h3>Fine Tuning</h3></section>
+      <section><h3>RAG</h3></section>
+      <section><h3>Agents</h3></section>
+    </section>
+
+	<section>
+		 <section><h3>Economic impact</h3></section>
+		 <section><h3>A world without work</h3></section>
+	</section>
+
+     <section>
+	  <section><h3>AI Safety</h3></section>
+      <section><h3>Allucinations and Overreliance</h3></section>
+      <section><h3>Emergent behaviour</h3></section>
+      <section><h3>Autonomous replication https://cdn.openai.com/papers/gpt-4-system-card.pdf</h3></section>
+      <section><h3>Acceleration</h3></section>
+	 </section>
+
+  </div>
+</div>
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/menu/menu.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -33,7 +198,7 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu  ]
 			});
 		</script>
 	</body>
